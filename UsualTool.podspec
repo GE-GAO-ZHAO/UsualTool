@@ -47,7 +47,7 @@ TODO: Add long description of the pod here.
 #    s.source_files = 'UsualTool/Classes/Source/**/*'
 #  end
   
-  s.dependency 'SSZipArchive'
+  #s.dependency 'SSZipArchive'
   
   # s.resource_bundles = {
   #   'UsualTool' => ['UsualTool/Assets/*.png']
