@@ -1,0 +1,27 @@
+{
+  "name": "UsualTool",
+  "version": "0.0.1",
+  "summary": "A short description of UsualTool.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/葛高召/UsualTool",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "葛高召": "gaozhao.ge@huolala.cn"
+  },
+  "source": {
+    "git": "https://github.com/葛高召/UsualTool.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "UsualTool/Classes/Source/**/*",
+  "dependencies": {
+    "SSZipArchive": [
+
+    ]
+  }
+}

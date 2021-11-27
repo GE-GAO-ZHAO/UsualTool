@@ -1,0 +1,23 @@
+PODS:
+  - SSZipArchive (2.4.2)
+  - UsualTool (0.0.1):
+    - SSZipArchive
+
+DEPENDENCIES:
+  - UsualTool (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  UsualTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SSZipArchive: e7b4f3d9e780c2acc1764cd88fbf2de28f26e5b2
+  UsualTool: 8f3eb834dd79b83f54e9752fb62dbe7af9617c7e
+
+PODFILE CHECKSUM: 6cb283acabe839c67dd4c6a4363c0f94a6cffe9a
+
+COCOAPODS: 1.11.0

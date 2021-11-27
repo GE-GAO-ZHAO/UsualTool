@@ -3,11 +3,24 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'UsualTool_Example' do
-  pod 'UsualTool', :path => '../'
+  
+  case ENV['Flag']
+  when 'rel'
+    puts "正式安装-二进制安装"
+  else
+    puts "非正式安装-源代码安装"
+    pod 'UsualTool', :path => '../'
+  end
+  
+  
 
   target 'UsualTool_Tests' do
     inherit! :search_paths
 
     
   end
+end
+
+post_install do |installer|
+  puts ""
 end
