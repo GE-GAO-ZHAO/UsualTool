@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'UsualTool_Example' do
+  pod 'UsualTool', :path => '../'
+
+  target 'UsualTool_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
