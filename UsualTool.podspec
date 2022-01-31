@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UsualTool'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A short description of UsualTool.'
 
 # This description is used to generate tags and improve search results.
@@ -30,14 +30,19 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  case ENV['Flag']
-  when 'rel'
-    puts "正式安装-二进制安装"
-    s.source_files = 'UsualTool/Classes/Framework/*'
-  else
-    puts "非正式安装-源代码安装"
-    s.source_files = 'UsualTool/Classes/Source/**/*'
-  end
+  if s.version.to_s.include?'Binary' or ENV['IS_BINARY']
+     puts '-------------------------------------------------------------------'
+     puts 'Notice:ABC is binary now'
+     puts '-------------------------------------------------------------------'
+     s.prepare_command = '/bin/bash build_lib.sh'
+     s.ios.vendored_frameworks= 'PodProducts/*.framework'
+   else
+     puts '-------------------------------------------------------------------'
+     puts 'Notice:ABC is source code now'
+     puts '-------------------------------------------------------------------'
+     s.static_framework = false
+     s.source_files = 'UsualTool/Classes/**/*'
+   end
   
 #  if ENV['Flag'] then
 #    puts "正式安装-二进制";

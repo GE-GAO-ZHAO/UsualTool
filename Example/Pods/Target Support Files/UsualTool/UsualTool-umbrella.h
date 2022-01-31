@@ -12,10 +12,7 @@
 
 #import "HLLClientDeciceTool.h"
 #import "HLLDateTool.h"
-#import "HLLFileTool.h"
 #import "HLLWeakProxy.h"
-#import "Singleton.h"
-#import "UsualTool.h"
 
 FOUNDATION_EXPORT double UsualToolVersionNumber;
 FOUNDATION_EXPORT const unsigned char UsualToolVersionString[];

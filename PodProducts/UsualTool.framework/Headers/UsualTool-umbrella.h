@@ -10,9 +10,10 @@
 #endif
 #endif
 
-#import "SSZipArchive.h"
-#import "SSZipCommon.h"
+#import "HLLClientDeciceTool.h"
+#import "HLLDateTool.h"
+#import "HLLWeakProxy.h"
 
-FOUNDATION_EXPORT double SSZipArchiveVersionNumber;
-FOUNDATION_EXPORT const unsigned char SSZipArchiveVersionString[];
+FOUNDATION_EXPORT double UsualToolVersionNumber;
+FOUNDATION_EXPORT const unsigned char UsualToolVersionString[];
 
